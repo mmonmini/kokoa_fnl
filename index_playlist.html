@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #wrapper {
+        width: 500px;
+        height: 900px;
+        border: 5px solid aqua;
+        border-radius: 5px;
+    }
+    li {
+        list-style: none;
+    }
+    #nav {
+        padding: 40px 50px ;
+        display: flex;
+        justify-content: left;
+        
+    }
+    .icon {
+        padding-right: 100px;
+        font-size: 25px;
+        font-weight: 800;
+    }
+    .playing {
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    #play {
+        display: flex;
+        align-items: center;
+        padding: 0 50px;
+
+    }
+    #play-btn {
+        display: flex;
+        align-items: center;
+        padding: 0 50px;
+    
+    }
+    .img {
+        width: 150px;
+        height: 150px;
+        background-color: orange;
+        border: 3px solid black;
+        border-radius: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .img i {
+            font-size: 60px;
+    
+
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info li:nth-child(1) {
+        font-size: 50px;
+        font-weight: 800;
+    }
+    .info li:nth-child(2) {
+        font-size: 50px;
+        font-weight: 800;
+    }
+    .info li:nth-child(3) {
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    #play-control {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 60px;
+        text-align: center;
+        font-size: 22px;
+        line-height: 2em;
+        
+    }
+    .play-control__play {
+        width: 150px;
+        height: 50px;
+        border: 3px solid black;
+        border-radius: 15px;
+        box-shadow: 0 5px 0 black;
+    
+    }
+    .play-control__heart {
+        width: 50px;
+        height: 50px;
+        border: 3px solid black;
+        border-radius: 50%;
+        box-shadow: 0 5px 0 black;
+    
+    }
+    .play-control__plus {
+        width: 50px;
+        height: 50px;
+        border: 3px solid black;
+        border-radius: 50%;
+        box-shadow: 0 5px 0 black;
+    
+    
+    }
+    .img__list {
+        width: 80px;
+        height: 80px;
+        border-color: 3px solid black;
+    }
+    .playlist-items__song {
+        display: flex;
+    }
+    .playlist-items__song {
+        width: 70px;
+        height: 70px;
+        border: 3px solid black;
+        border-radius: 15px;
+        margin: 35px 10px;
+    }
+    .playlist-items__song:nth-child(1) {
+        background-color: tomato;
+    }
+     .playlist-items__song:nth-child(2) {
+        background-color: plum;
+    }
+      .playlist-items__song:nth-child(3) {
+        background-color: blue;
+    }
+      .playlist-items__song:nth-child(4) {
+        background-color: teal;
+    }
+
+    .song {
+        padding-left: 90px;
+    }
+    .song .song__theme:nth-child(1) {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .song__theme {
+        width: 300px;
+    }
+   
+    </style>
+</head>
+<body>
+    <div id="wrapper">  
+        <div id="nav">
+            <span class="icon"><i class="fa-solid fa-x "></i></span>
+            <span class="playing">Playlist</span>
+        </div>
+        <div id="play">
+            <div class="img"><i class="fa-regular fa-file-image"></i></div>
+            <div class="info">
+            <ul>
+                <li>Random</li>
+                <li>Love</li>
+                <li>by Jennie Jennie Jennie</li>
+            </ul>
+            </div>
+        </div>
+        <div id="play-btn">
+            <ul id="play-control">
+                <li class="play-control__play"><i class="fa-solid fa-play"></i>play</li>
+                <li class="play-control__heart"><i class="fa-regular fa-heart"></i></li>
+                <li class="play-control__plus"><i class="fa-solid fa-plus"></i></li>
+            </ul>
+        </div>
+        <div class="playlist">
+           <ul class="playlist-items">
+            <li class="playlist-items__song">
+                <div class="playlist-items__img"></div>
+                <div class="playlist-items__inf">
+                    <ul class="song">
+                          <li class="song__theme">Swim</li>
+                        <li class="song__by">BTS</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="playlist-items__song">
+                <div class="playlist-items__img"></div>
+                <div class="playlist-items__inf">
+                     <ul class="song">
+                        <li class="song__theme">Jump</li>
+                        <li class="song__by">Jennie</li>
+                     </ul>
+                </div>
+            </li>
+            <li class="playlist-items__song">
+                <div class="playlist-items__img">5</div>
+                <div class="playlist-items__inf">
+                     <ul class="song">
+                          <li class="song__theme">Thats nono</li>
+                        <li class="song__by">Itsy</li>
+                     </ul>
+                </div>
+            </li>
+            <li class="playlist-items__song">
+                <div class="playlist-items__img"></div>
+                <div class="playlist-items__inf">
+                     <ul class="song">
+                          <li class="song__theme">404era</li>
+                        <li class="song__by">kiiikiii</li>
+                     </ul>
+                </div>
+            </li>
+           </ul>
+        </div>
+       
+
+    </div>
+</body>
+</html>
